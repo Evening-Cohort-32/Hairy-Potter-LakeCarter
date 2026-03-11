@@ -4,10 +4,10 @@ export const makePottery = (shape,weight,height) => {
     let output = {}
     potteryMade += 1
     output = {
-        Shape: shape,
-        Weight: weight,
-        Hight:height,
-        ID:potteryMade
+        shape: shape,
+        weight: weight,
+        hight:height,
+        id:potteryMade
     }
     return output
 }
