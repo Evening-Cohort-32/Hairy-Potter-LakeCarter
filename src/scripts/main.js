@@ -6,10 +6,10 @@ import { potteryList} from './potteryList.js'
 
 // Make 5 pieces of pottery at the wheel
 let mug = makePottery("Mug",3,5)
-let vase = makePottery("vase",6,8)
-let cup = makePottery("cup",1,4)
-let bowl = makePottery("bowl",3,3)
-let pot = makePottery("pot",6,6)
+let vase = makePottery("Vase",6,8)
+let cup = makePottery("Cup",1,4)
+let bowl = makePottery("Bowl",3,3)
+let pot = makePottery("Pot",6,6)
 // Fire each piece of pottery in the kiln
 mug = firePottery(mug,1500)
 vase = firePottery(vase,2000)
@@ -23,8 +23,10 @@ mug = toSellOrNotToSell(mug)
 bowl = toSellOrNotToSell(bowl)
 pot = toSellOrNotToSell(pot)
 // Invoke the component function that renders the HTML list
-const potteryHTML = potteryList(usePottery())
+let potteryHTML = potteryList(usePottery())
 
-const htmlElement = document.getElementsByClassName(`potteryList`); 
+//let htmlElement = document.getElementById(`potteryList`); 
+let htmlElement = document.querySelector(`.potteryList`); 
 
 htmlElement.innerHTML = `${potteryHTML}`;
+console.log(document.getElementsByClassName)
