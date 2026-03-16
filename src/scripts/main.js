@@ -29,4 +29,3 @@ let potteryHTML = potteryList(usePottery())
 let htmlElement = document.querySelector(`.potteryList`); 
 
 htmlElement.innerHTML = `${potteryHTML}`;
-console.log(document.getElementsByClassName)
